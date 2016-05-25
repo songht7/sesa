@@ -1,40 +1,40 @@
 @charset "utf-8";
 @font-face { 
-  font-family: 'DINPro-Black';
+  font-family: 'DIN-Black';
   src: url('./font/din/DINPro-Black/DINPro-Black.eot');
   src: url('./font/din/DINPro-Black/DINPro-Black.woff') format('woff')
   ,url('./font/din/DINPro-Black/DINPro-Black.ttf') format('truetype')
   ,url('./font/din/DINPro-Black/DINPro-Black.svg') format('svg');
 }
 @font-face { 
-  font-family: 'DINPro-Bold';
+  font-family: 'DIN-Bold';
   src: url('./font/din/DINPro-Bold/DINPro-Bold.eot');
   src: url('./font/din/DINPro-Bold/DINPro-Bold.woff') format('woff')
   ,url('./font/din/DINPro-Bold/DINPro-Bold.ttf') format('truetype')
   ,url('./font/din/DINPro-Bold/DINPro-Bold.svg') format('svg');
 }
 @font-face {
-  font-family: 'DINPro-Light';
+  font-family: 'DIN-Light';
   src: url('./font/din/DINPro-Light/DINPro-Light.eot');
   src: url('./font/din/DINPro-Light/DINPro-Light.woff') format('woff')
   ,url('./font/din/DINPro-Light/DINPro-Light.ttf') format('truetype')
   ,url('./font/din/DINPro-Light/DINPro-Light.svg') format('svg');
 }
 @font-face {
-  font-family: 'DINPro-Medium';
+  font-family: 'DIN-Medium';
   src: url('./font/din/DINPro-Medium/DINPro-Medium.eot');
   src: url('./font/din/DINPro-Medium/DINPro-Medium.woff') format('woff')
   ,url('./font/din/DINPro-Medium/DINPro-Medium.ttf') format('truetype')
   ,url('./font/din/DINPro-Medium/DINPro-Medium.svg') format('svg');
 }
 @font-face {
-  font-family: 'DINPro-Regular';
+  font-family: 'DIN-Regular';
   src: url('./font/din/DINPro-Regular/DINPro-Regular.eot');
   src: url('./font/din/DINPro-Regular/DINPro-Regular.woff') format('woff')
   ,url('./font/din/DINPro-Regular/DINPro-Regular.ttf') format('truetype')
   ,url('./font/din/DINPro-Regular/DINPro-Regular.svg') format('svg');
 }
-body {background: #fff; color: #5C5C5C;font-family:'DINPro-Light','DINPro-Black',Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
+body {background: #fff; color: #5C5C5C;font-family:'DIN-Light','DIN-Black',Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size: 14px; line-height: 18px; margin: 0; padding: 0}
 h1, h2, h3, h4, h5, h6, p, form { margin: 0; padding: 0; font-weight: normal; font-size: 14px; }
 ul, li, menu, ol, dd, dl, dt { list-style: none outside none; margin: 0; padding: 0; }
 img, a { border: medium none; color: #5C5C5C; text-decoration: none; }
@@ -52,18 +52,20 @@ input[type=submit], input[type=button], button {cursor:pointer}
 /*.icons{background: url('../images/icon.png') no-repeat;overflow: hidden;}*/
 
 .formBox{position:relative}
-.btns{width: 275px;height: 50px;line-height: 50px;font-family:Arial;text-align: center;color: #fff;font-size: 14px;display: inline-block;margin: 25px 0 0;border-radius: 3px;border: 1px solid #fff}
+.btns{width: 82px;height: 38px;line-height: 38px;font-family:Arial;text-align: center;color: #fff;font-size: 14px;display: inline-block;margin: 25px 0 0;border-radius: 3px;border: 1px solid #fff}
+.btns.black{color: #373D48;border-color: #373D48}
 
 #Container{width:100%;overflow-x:hidden;}
 #Wrapper{width:200%;position:relative;overflow:hidden;left:0;}
-#PageLeft,#PageMain,#PageRight{width:50%;float:left;position:relative;font-family:'DINPro-Light';}
+#PageLeft,#PageMain,#PageRight{width:50%;float:left;position:relative;font-family:'DIN-Light';}
 /*左菜单*/
 #PageLeft,#PageRight{min-height:200px;height:100%;background:#ebdcbb;color:#fff;overflow-y:auto}
 /*右菜单*/
 #PageRight{background:#3B3F47;}
+ #UserMange{overflow: auto;}
   .mangeBox ul{overflow: hidden;}
   .mangeBox ul li{float: left;width: 50%;display: table;}
-  .mgBtns a{display: table-cell;vertical-align: middle;text-align: center;height: 120px;border-bottom: 1px solid #4A4F59;font-size: 16px;line-height: 18px;color: #F5F5F5}
+  .mgBtns a{display: table-cell;vertical-align: middle;text-align: center;height: 95px;padding-top: 25px;border-bottom: 1px solid #4A4F59;font-size: 16px;line-height: 18px;color: #F5F5F5}
   .mgBtns a:nth-child(1n){border-right: 1px solid #4A4F59}
   .mgBtns a:hover,.mgBtns a:active,.mgBtns a.on{background: #464B54}
   .mgBtns.mgBtn_01 a:hover,.mgBtns.mgBtn_01 a:active,.mgBtns.mgBtn_01 a.on{border-bottom-color: #15568E}
@@ -72,16 +74,26 @@ input[type=submit], input[type=button], button {cursor:pointer}
   .mgBtns.mgBtn_04 a:hover,.mgBtns.mgBtn_04 a:active,.mgBtns.mgBtn_04 a.on{border-bottom-color: #55DCC3}
   .mgBtns.mgBtn_05 a:hover,.mgBtns.mgBtn_05 a:active,.mgBtns.mgBtn_05 a.on{border-bottom-color: #2AB9E0}
   .mgBtns.mgBtn_06 a:hover,.mgBtns.mgBtn_06 a:active,.mgBtns.mgBtn_06 a.on{border-bottom-color: #FF4154}
-  .mgMore{text-align: center;padding: 65px 0 0;}
+  .mgBtns a span{padding-top: 25px;}
+  .mgBtns.mgBtn_01 a span{background: url("../images/icon_07.png") no-repeat 50% 0;}
+  .mgBtns.mgBtn_02 a span{background: url("../images/icon_09.png") no-repeat 50% 0;}
+  .mgBtns.mgBtn_03 a span{background: url("../images/icon_08.png") no-repeat 50% 0;}
+  .mgBtns.mgBtn_04 a span{background: url("../images/icon_01.png") no-repeat 50% 0;}
+  .mgBtns.mgBtn_05 a span{background: url("../images/icon_05.png") no-repeat 50% 0;}
+  .mgBtns.mgBtn_06 a span{background: url("../images/icon_03.png") no-repeat 50% 0;}
+  .mgMore{text-align: center;padding: 50px 0 0;}
 /*头部*/
 header{height:52px;width:100%;position:fixed;top:0;left:0;z-index:50;background:#15568E;}
-.hd_left,.hd_middle,.hd_right{width:20%;height:100%;float:left}
+.hd_left,.hd_middle,.hd_right{width:25%;height:100%;float:left}
 .hd_left{}
   #Logo{position: relative;z-index: 1;top: 7px;left: 20px;}
-.hd_middle{width:60%;}
+.hd_middle{width:20%;}
   .pageTitle{line-height:48px;text-align: center;color:#fff;font-size:2.4em}
-.hd_right{float: right;}
-  .hdRBox{padding: 20px 16px 0 0;}
+.hd_right{float: right;width:55%;}
+  .hdRBox{padding: 20px 16px 0 0;overflow: hidden;}
+  .seachBox{float: right;border-right: 1px solid #23649B;padding-right: 15px;margin-right: 15px}
+  #Seach{width: 18px;height: 18px;background: url('../images/seach.png') no-repeat 0 50%;border: 0;padding: 0;margin: 0;outline: none}
+  #Seach.on{width: 80px;background-color: #23649B;border-radius: 5px;padding-left:20px;color: #fff}
   #UserMenu{background: url("../images/menu.png") no-repeat 50% 50%;text-indent: -99999px;display: block;float: right;width: 18px;height: 13px;}
 
 
@@ -95,7 +107,7 @@ header{height:52px;width:100%;position:fixed;top:0;left:0;z-index:50;background:
 
   .pageBlock .royalSlider .rsArrow{position: absolute;right: -9999999px}
   .slideInfo{position: absolute;z-index: 5;width: 100%;height: 100%;left: 0;display:table;top: 0;*top: 145px;}
-  .slideInfo .inner{letter-spacing: 1.5px;text-align: center;font-family: 'DINPro-Bold',Arial;font-size:48px;line-height: 60px; color: #fff;display: table-cell;vertical-align: middle;text-shadow: 0px 0px 4px rgba(0, 0, 0,0.5);-webkit-text-shadow: 0px 0px 4px rgba(0, 0, 0,0.5);-ms-text-shadow: 0px 0px 4px rgba(0, 0, 0,0.5);}
+  .slideInfo .inner{letter-spacing: 1.5px;text-align: center;font-family: 'DIN-Bold',Arial;font-size:48px;line-height: 60px; color: #fff;display: table-cell;vertical-align: middle;text-shadow: 0px 0px 4px rgba(0, 0, 0,0.5);-webkit-text-shadow: 0px 0px 4px rgba(0, 0, 0,0.5);-ms-text-shadow: 0px 0px 4px rgba(0, 0, 0,0.5);}
 
 @media screen and (min-width: 0px) and (max-width: 850px) {
   body{width: 100%;min-width: 100px;font-size: 62.5%;}
@@ -124,17 +136,42 @@ header{height:52px;width:100%;position:fixed;top:0;left:0;z-index:50;background:
 #loading img{margin-left: 10px;}
 #pullUp{display:none}
 
+.blockTitle{font-size: 18px;line-height: 22px;font-family: 'DIN-Bold',Arial;color: #fff;padding-bottom: 35px;}
+.blockTitle span{display: block;font-family: 'Arial';}
 .page2{background: #FFFFFF}
-.page3{background: #F5F5F5}
-.page4{background: #3B3F47;border-top: 3px solid #FF4154;}
+  .pgTop{background: url('../images/line_01.png') no-repeat 20% 50%;}
+    .teachEn{font-size: 30px;line-height: 36px;font-family:'DIN-Regular';text-align: right;padding-bottom: 17px;}
+      .teachEn b{font-family:'DIN-Bold';font-weight: normal;}
+  .pgBottom{background:url('../images/line_02.png') no-repeat 50% 88%}
+    .teachCn{font-size: 24px;line-height: 32px;font-family: Arial;}
+.page3{background: #F5F5F5;color: #373D48}
+  .page3 .blockTitle{color: #373D48}
+  .page3 .rowTitle{color: #373D48}
+  .rowBlock{padding-bottom: 70px;}
+  .rowBlock:last-child{padding-bottom: 0}
+    .rowImg{position: relative;}
+      .imgBox{margin-bottom: 20px;}
+        .imgBox img{width: 100%;height: auto;position: relative;z-index: 2}
+      .borderLeft,.borderRight{display: block;position: absolute;z-index: 1}
+      .borderLeft{background: url('../images/border_01.png') no-repeat;width: 144px;height: 144px;bottom: -8px;left: -10px;}
+      .borderRight{background: url('../images/border_02.png') no-repeat;width: 37px;height: 37px;top: -10px;right: -10px;}
+    .rowTitle{font-family: Arial;font-size: 20px;line-height: 26px;padding-bottom: 10px;display: block;}
+    .rowOvs{font-family: Arial;font-size: 12px;line-height: 18px;padding-bottom: 20px;}
+  .rowInfo{overflow: hidden;}
+    .page3 .btns{border-color: #373D48;color: #373D48;margin-top: 0;float: left;}
+    .date{float: right;padding-top: 20px;}
+.page4{background: #3B3F47;border-top: 3px solid #FF4154;color: #fff}
+  .page4 .rowTitle{color: #fff}
+  .page4 .btns{margin-top: 0;float: left;}
+  .ctg span{color: #9CA1AB;background: url('../images/icon_03_gay.png') no-repeat;padding:0 0 10px 20px;display: block;}
+  
 .page5{background: #757980}
   .contactBox{float: left;width:565px;}
-    .contactTitle{font-size: 22px;line-height: 26px;text-align: left;padding-bottom:30px;}
-    .fmRow{width: 100%;margin: 0 0 23px;}
+    .fmRow{width: 100%;margin: 0 0 15px;}
     .iptBlock{padding: 0 22px;background: #C7C9CC;border: 1px solid #cdcdcd;position: relative;}
     .iptBlock.isError{border: 1px solid #f40}
-    .iptTxt{width: 100%;padding: 15px 0;color: #4a4a4a;background: none;border:none;outline: none;font-size: 15px;font-family: "DINPro-Medium",Arial;}
-    .iptTxt.msgIpt{resize: none;height: 175px;font-family: "DINPro-Medium",Arial;}
+    .iptTxt{width: 100%;padding: 9px 0;color: #4a4a4a;background: none;border:none;outline: none;font-size: 15px;font-family: "DINPro-Medium",Arial;}
+    .iptTxt.msgIpt{resize: none;height: 126px;font-family: "DIN-Medium",Arial;}
     .iptTxt.full{color: #4a4a4a;}
     input:input-placeholder,
     textarea:input-placeholder,
@@ -149,6 +186,11 @@ header{height:52px;width:100%;position:fixed;top:0;left:0;z-index:50;background:
         color: #9B9B9B;
     }
     .btns.sbmt{width: 167px;line-height: 44px;height: 44px;margin:0;}
+  .contactWay{padding: 15px 0 20px;}
+  .contactWay p{display: block;padding-left: 20px;color: #fff;font-size: 12px;line-height: 22px;}
+  .contactWay p a{color: #fff}
+  .contactWay p.ads{background: url('../images/icon_02.png') no-repeat 0 50%;}
+  .contactWay p.phone{background: url('../images/icon_phone.png') no-repeat 0 50%;}
 
 footer .inner{padding:0 30px;}
 #CopyRight{text-align: center;color: #FFF;font-size: 1.2em;line-height: 1em;font-family: 'Arial';padding:30px 0;border-top: 2px solid #979797}
@@ -159,15 +201,31 @@ footer .inner{padding:0 30px;}
 .error span{padding:0 10px 0 0;}
 .error a{font-size: 16px;color: #542c14}
 /** input error **/
-.isError .error{font-size: 14px;color: #f40;padding: 0 10px;position: absolute;right: 10px;top: 8px;}
+.isError .error{font-size: 14px;color: #f40;padding: 0 10px;position: absolute;right: 10px;top: 2px;}
 
 #ScrollTop{display: block;width: 48px;height: 48px;text-indent: -99999px;background-position: 0 0;position: fixed;right: 20px;bottom: 20px;z-index: 50px;}
 #ScrollTop:hover{background-position: 0 -68px;}
 
 
 @media screen and (min-width: 0px) and (max-width: 850px) {
-.contactBox{float: none;}
-  .contactBox{width: 100%;padding-top: 20px;}
-  .pageTitle.contactTitle{width: 100%;font-size: 2.2em;line-height: 21px;padding-bottom:28px;}
-  .btns.sbmt{width: 100%;}
+  .btns.black{font-size: 1.2em}
+
+.blockTitle{font-size: 1.8em;line-height: 1.4em}
+  .page2{}
+    .teachEn{font-size: 3em;line-height: 1.2em;}
+    .teachCn{font-size: 2.4em;line-height: 1.4em;}
+  .page3{}
+    .rowTitle{font-size: 2em;line-height: 1.4em;}
+    .rowOvs{font-size: 1.2em;line-height: 1.8em}
+  .page4{}
+    
+  .page5{}
+    .contactBox{float: none;width: 100%;}
+    .contactWay p{font-size: 1.2em;line-height: 1.8em;}
+      .btns.sbmt{width: 100%;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .pgTop{background: url('../images/line_01.png') no-repeat 0 50%;}
+  .pgBottom{background:url('../images/line_02.png') no-repeat 182px 75px}
 }

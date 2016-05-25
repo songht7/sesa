@@ -30,6 +30,18 @@ $(function () {
         var sTop = $(window).scrollTop();
         $("#UserMange").css({ "padding-top": sTop });
     });
+    /*收索框*/
+    $("#Seach").focus(function(){
+        var obj=$(this);
+        obj.addClass('on');
+    });
+    $("#Seach").blur(function(){
+        var obj=$(this);
+        if(!obj.val().length){
+            obj.removeClass('on');
+        }
+    });
+
     /* 回到顶部 */
     $(document).on("click","#ScrollTop",function(){
         $("html,body").animate({"scrollTop":0},500);
@@ -68,16 +80,16 @@ var minWidth=1280;
 function reSize(){
     var winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var bodyHeight=$("body").height(),winHeight=$(window).height();
-    winHeight = bodyHeight>winHeight?bodyHeight:winHeight;
+    var docHeight = bodyHeight>winHeight?bodyHeight:winHeight;
     headHeight = $("header").height();
-    $("#PageLeft").css({ "min-height": winHeight});
-    $("#PageRight").css({ "min-height": winHeight});
+    $("#PageLeft").css({ "min-height": docHeight});
+    $("#PageRight").css({ "min-height": docHeight});
     var menuWidth=$(window).width()-52;
     if($("#UserMenu").hasClass("isOpen")){
-        $("header").animate({ "left": "-"+menuWidth },1);
-        $("#Wrapper").animate({ "left": "-"+menuWidth },1);
+        $("header").css({ "left": "-"+menuWidth+"px" });
+        $("#Wrapper").css({ "left": "-"+menuWidth+"px" });
     }
-    $("#UserMange").css({"width":menuWidth});
+    $("#UserMange").css({"width":menuWidth,"height":winHeight});
 }
 /**
 type:验证类型
