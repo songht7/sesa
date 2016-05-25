@@ -8,17 +8,18 @@ $(function () {
     //左测滑出用户菜单
     $(document).on("click", "#UserMenu,#Mask", function () {
         var obj = $(this);
+        var _left=$(window).width()-52;
         if (!$("#UserMenu").hasClass("isOpen")) {//显示用户管理菜单
-            $("header").animate({ "left": "-90%" }, 500);
-            $("#Wrapper").animate({ "left": "-90%" }, 500, function () {
-                $("#UserMenu").addClass("isOpen"); 
+            $("#UserMenu").addClass("isOpen"); 
+            $("header").animate({ "left": "-"+_left }, 500);
+            $("#Wrapper").animate({ "left": "-"+_left }, 500, function () {
                 //$("#Container").css({ "overflow-y": "hidden", "height": winHeight }); 
                 $("#Mask").css({ "display": "block" });
             });
         } else {//隐藏
+            $("#UserMenu").removeClass("isOpen"); 
             $("header").animate({ "left": "0" }, 500);
             $("#Wrapper").animate({ "left": "0" }, 500, function () {
-                $("#UserMenu").removeClass("isOpen"); 
                 //$("#Container").css({ "overflow-y": "auto", "height": "auto" });
                 $("#Mask").css({ "display": "none" });
             });
@@ -27,7 +28,7 @@ $(function () {
     });
     $(window).scroll(function() {
         var sTop = $(window).scrollTop();
-        $("#UserMange").css({ "padding-top": sTop+10 });
+        $("#UserMange").css({ "padding-top": sTop });
     });
     /* 回到顶部 */
     $(document).on("click","#ScrollTop",function(){
@@ -54,6 +55,9 @@ $(function () {
         });
     }
     
+    /** set footer bgColor**/
+    var bg=$(".pageBlock:last").css("background-color");
+    $("footer").css({"background-color":bg});
 });
 
 window.onload=function(){
@@ -63,10 +67,17 @@ window.onload=function(){
 var minWidth=1280;
 function reSize(){
     var winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    winHeight = $("body").height();
+    var bodyHeight=$("body").height(),winHeight=$(window).height();
+    winHeight = bodyHeight>winHeight?bodyHeight:winHeight;
     headHeight = $("header").height();
     $("#PageLeft").css({ "min-height": winHeight});
     $("#PageRight").css({ "min-height": winHeight});
+    var menuWidth=$(window).width()-52;
+    if($("#UserMenu").hasClass("isOpen")){
+        $("header").animate({ "left": "-"+menuWidth },1);
+        $("#Wrapper").animate({ "left": "-"+menuWidth },1);
+    }
+    $("#UserMange").css({"width":menuWidth});
 }
 /**
 type:验证类型
@@ -163,9 +174,9 @@ function formPost(obj, form) {
             }
             var check = fromexper(ckTypes, verify, $(t),obj2);
             if (!check) {
-                if (verify == 'notempty') { errorTxt = "'"+type + "' can`t be empty"; }
-                else if(verify=="reCheck"){errorTxt = "'"+type+"'is not consistent, please confirm";}
-                else { errorTxt = "Please enter the correct '"+type+"'";}
+                if (verify == 'notempty') { errorTxt = "'"+type + "' 不能为空"; }
+                else if(verify=="reCheck"){errorTxt = "'"+type+"'不一致，请确认";}
+                else { errorTxt = "请填写正确的'"+type+"'";}
                 error($(t), errorTxt, "noBorder");
                 //return false;
             }

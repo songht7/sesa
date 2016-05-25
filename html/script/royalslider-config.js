@@ -25,13 +25,13 @@ var cfg={
     startSlideId: 0,
     //autoPlay: false,
     transitionType:'move',
-    globalCaption: true,
+    globalCaption: false,
     deeplinking: {
       enabled: true,
       change: false
-    },
-    imgWidth: 2000,
-    imgHeight: 545
+    }
+    // ,imgWidth: 2000
+    // ,imgHeight: 800
   }
 var slider="";
 $(function(){
@@ -61,6 +61,8 @@ function reSizeForSlide () {
   setRoyal();
 }
 function setRoyal(){
-  $('.royalSlider').royalSlider(cfg);
-  slider=$(".royalSlider").data('royalSlider');
+  var sliderBox=$(".royalSlider");
+  if(sliderBox.hasClass('justOne')){cfg['loop']=false;cfg['arrowsNav']=false;cfg['autoScaleSlider']=false;cfg['controlNavigation']="none";}
+  sliderBox.royalSlider(cfg);
+  slider=sliderBox.data('royalSlider');
 }

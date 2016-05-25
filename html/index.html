@@ -20,82 +20,106 @@
     <link href="./css/base.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="Container" class="">
+    <div id="Container" class="homePage">
         <div id="Wrapper" class="clearfix">
             <div id="PageMain">
-              <header>
+              <header class='clearfix'>
 								<div class="hd_left">
 								  <a href="/" id="Logo">
 								    <img src="./images/logo.png" alt="sesa" />
 								  </a>
 								</div>
 								<div class="hd_middle">
-									<div class="pageTitle">sesa</div>
+									<div class="pageTitle">&nbsp;</div>
 								</div>
 								<div class="hd_right">
-									<a href="javascript:;" id="UserMenu" class="hdl_Btn">menu</a>
+									<div class="hdRBox">
+										<a href="javascript:;" id="UserMenu" class="hdr_Btn">menu</a>
+									</div>
 								</div>
 							</header>
 
-              <div class="pageBox">
-                  <div id="HomePage">
-									    <p>TEACH STUDENTS IN ACCORDANCE OF  THEIR APTITUDE </p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
-									    <p>HomePage</p>
+              <div class="pageBlock page1" id="SlideBox">
+							    <div class="pageCont inner">
+	                  <div class="sliderContainer fullWidth clearfix">
+							        <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+
+							            <div class="rsContent">
+							                <img class="rsImg" src="./images/slide01.png" alt="" />
+							            </div>
+
+							            <div class="rsContent">
+							               <img class="rsImg" src="./images/slide01.jpg" alt="" />
+							           </div>
+							           
+							           <div class="rsContent">
+							               <img class="rsImg" src="./images/slide02.jpg" alt="" />
+							             <!--   <div class="slideInfo">
+							                   <div class="inner">
+							                       <div class="infos">
+							                           <div class="infoHead">Analytics for Organizations</div>
+							                           <div class="ovs">Write something about Wizdata`s service or anyother</div>
+							                           <a href="#" class="btns moreBtn"><span>MORE ABOUT WIZDATA</span></a>
+							                       </div>
+							                   </div>
+							               </div> -->
+							           </div>
+
+							        </div>
+							      </div>
+						    </div>
+              </div>
+							<!-- page2 -->
+							<div class="pageBlock page2">
+							    <div class="pageCont inner">
+										<h1>TEACH STUDENTS IN ACCORDANCE OF <br>THEIR APTITUDE </h1>
 									</div>
               </div>
+							<!-- page3 -->
+							<div class="pageBlock page3">
+							    <div class="pageCont inner">
+										<h3>LATEST NEWS <br>最新动态</h3>
+									</div>
+              </div>
+							<!-- page4 -->
+							<div class="pageBlock page4">
+							    <div class="pageCont inner">
+										<h3>THINKING AND SHARING <br>观点分享</h3>
+									</div>
+              </div>
+							<!-- page5 -->
+							<div class="pageBlock page5">
+							    <div class="pageCont inner">
+						        <div class="contactBox">
+						            <h3 id="Contact" class="pageTitle contactTitle">CONTACT</h3>
+						            <form action="#" name="Contact" id="Contact" class="formBox" method="post">
+						                <div class="fmRow">
+						                    <div class="iptBlock">
+						                        <input type="text"  name="name" id="Name" class="iptTxt ndCheck" placeholder="姓名" data-verify="notempty" data-type="姓名" >
+						                    </div>
+						                </div>
+						                <div class="fmRow">
+						                    <div class="iptBlock">
+						                        <input type="text"  name="email" id="Email" class="iptTxt ndCheck" placeholder="邮箱" data-verify="email" data-type="邮箱" >
+						                    </div>
+						                </div>
+						                <div class="fmRow">
+						                    <div class="iptBlock">
+						                        <textarea name="detail" id="Message" class="iptTxt msgIpt ndCheck" placeholder="留言" data-verify="notempty" data-type="留言"></textarea>
+						                    </div>
+						                </div>
+						                <div class="fmRow">
+						                    <a href="javascript:;" class="btns sbmt" onclick="formPost(this)"><span>发送留言</span></a>
+						                </div>
+						            </form>
+						        </div>
+									</div>
+              </div>
+              <footer>
+								<div class="pageCont inner">
+									<div id="CopyRight">© 上海外国语大学附属双语学校版权所有</div>
+								</div>
+              </footer>
               <a href="javascript:;" id="Mask">&nbsp;</a>
             </div>
             <div id="PageRight">
@@ -103,15 +127,16 @@
 							    <div class="mangeMain">
 							        <div class="mangeBox">
 							            <ul>
-							                <li class="mgBtns mgBtn_01"><a href="/"><span>我要报修</span></a></li>
-							                <li class="mgBtns mgBtn_02 order"><a href="/order/myRepair"><span>我的订单</span></a></li>
-							                <li class="mgBtns mgBtn_06 case"><a href="/case"><span>装修案例</span></a></li>
-							                <li class="mgBtns mgBtn_04 "><a href="/home/Serve"><span>服务规范</span></a></li>
-							                <li class="mgBtns mgBtn_05 "><a href="/home/AboutUs"><span>关于我们</span></a></li>
+							                <li class="mgBtns mgBtn_01"><a href="#"><span>学校概况</span></a></li>
+							                <li class="mgBtns mgBtn_02"><a href="#"><span>招生信息</span></a></li>
+							                <li class="mgBtns mgBtn_06"><a href="#"><span>校园新闻</span></a></li>
+							                <li class="mgBtns mgBtn_04"><a href="#"><span>国际交流</span></a></li>
+							                <li class="mgBtns mgBtn_05"><a href="#"><span>双语有您</span></a></li>
+							                <li class="mgBtns mgBtn_06"><a href="#"><span>观点分享</span></a></li>
 							            </ul>
 							        </div>
 							        <div class="mgMore">
-							            <a href="tel:021-59995999" class="btns tel"><span>021-59995999</span></a>
+							            <a href="#" class="menuLogo"><img src="./images/logo_white.png" alt="sesa" /></a>
 							        </div>
 							    </div>
 							</section>

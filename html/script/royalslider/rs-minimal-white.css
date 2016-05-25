@@ -80,7 +80,7 @@
 
 .rsMinW .rsBullets {
 	position: absolute;
-	bottom: 15px;
+	bottom: 8px;
 	right: 0;
 	z-index: 35;
 	padding-top: 4px;
@@ -92,8 +92,8 @@
 	width: 100%;
 }
 .rsMinW .rsBullet {
-	width: 10px;
-	height: 10px;
+	width: 6px;
+	height: 6px;
 	display: inline-block;
 	*display:inline; 
 	*zoom:1;
@@ -102,8 +102,8 @@
 }
 .rsMinW .rsBullet span {
 	display: block;
-	width: 8px;
-	height: 8px;
+	width: 6px;
+	height: 6px;
 	border-radius: 50%;
 	border: 1px solid #fff;
 }
