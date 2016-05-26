@@ -74,7 +74,7 @@ input[type=submit], input[type=button], button {cursor:pointer}
   .mgBtns.mgBtn_04 a:hover,.mgBtns.mgBtn_04 a:active,.mgBtns.mgBtn_04 a.on{border-bottom-color: #55DCC3}
   .mgBtns.mgBtn_05 a:hover,.mgBtns.mgBtn_05 a:active,.mgBtns.mgBtn_05 a.on{border-bottom-color: #2AB9E0}
   .mgBtns.mgBtn_06 a:hover,.mgBtns.mgBtn_06 a:active,.mgBtns.mgBtn_06 a.on{border-bottom-color: #FF4154}
-  .mgBtns a span{padding-top: 30px;background-repeat: no-repeat;background-position: 50% 0;background-size: 24px auto}
+  .mgBtns a span{padding-top: 25px;letter-spacing: 1.1px;background-repeat: no-repeat;background-position: 50% 0;background-size: 22px auto}
   .mgBtns.mgBtn_01 a span{background-image: url("../images/mobile@2x/icon_07.png");}
   .mgBtns.mgBtn_02 a span{background-image: url("../images/mobile@2x/icon_09.png");}
   .mgBtns.mgBtn_03 a span{background-image: url("../images/mobile@2x/icon_08.png");}
@@ -155,11 +155,11 @@ header{height:52px;width:100%;position:fixed;top:0;left:0;z-index:50;background:
       .borderLeft,.borderRight{display: block;position: absolute;z-index: 1}
       .borderLeft{background: url('../images/border_01.png') no-repeat;width: 144px;height: 144px;bottom: -8px;left: -10px;}
       .borderRight{background: url('../images/border_02.png') no-repeat;width: 37px;height: 37px;top: -10px;right: -10px;}
-    .rowTitle{font-family: Arial;font-size: 20px;line-height: 26px;padding-bottom: 10px;display: block;}
+    .rowTitle{font-family: Arial;font-size: 20px;line-height: 26px;padding: 10px 0;display: block;}
     .rowOvs{font-family: Arial;font-size: 14px;line-height: 18px;padding-bottom: 20px;}
   .rowInfo{overflow: hidden;}
     .page3 .btns{border-color: #373D48;color: #373D48;margin-top: 0;float: left;}
-    .date{float: right;padding-top: 20px;}
+    .date{float: right;padding-top: 20px;font-family:'DIN-Regular';}
 .page4{background: #3B3F47;border-top: 3px solid #FF4154;color: #fff}
   .page4 .rowTitle{color: #fff}
   .page4 .btns{margin-top: 0;float: left;}
@@ -187,7 +187,7 @@ header{height:52px;width:100%;position:fixed;top:0;left:0;z-index:50;background:
     }
     .btns.sbmt{width: 167px;line-height: 44px;height: 44px;margin:0;}
   .contactWay{padding: 15px 0 20px;}
-  .contactWay p{display: block;padding-left: 20px;color: #fff;font-size: 12px;line-height: 22px;}
+  .contactWay p{display: block;padding-left: 25px;color: #fff;font-size: 14px;line-height: 22px;}
   .contactWay p a{color: #fff}
   .contactWay p.ads{background: url('../images/mobile@2x/icon_02.png') no-repeat 0 50%;background-size: auto 75%;}
   .contactWay p.phone{background: url('../images/mobile@2x/icon_phone.png') no-repeat 0 50%;background-size: auto 75%;}
@@ -216,14 +216,14 @@ footer .inner{padding:0 30px;}
     .teachEn{font-size: 3em;line-height: 1.2em;}
     .teachCn{font-size: 2.4em;line-height: 1.4em;}
   .page3{}
-    .rowTitle{font-size: 2em;line-height: 1.4em;}
+    .rowTitle{font-size: 2.2em;line-height: 1.4em;}
     .rowOvs{font-size: 1.4em;line-height: 1.8em}
   .page4{}
     .ctg span{font-size: 1.4em}
     
   .page5{}
     .contactBox{float: none;width: 100%;}
-    .contactWay p{font-size: 1.2em;line-height: 1.8em;}
+    .contactWay p{font-size: 1.4em;line-height: 1.8em;}
       .btns.sbmt{width: 100%;}
 
   #ScrollTop{right: 10px;-webkit-transform: scale(0.9);-ms-transform: scale(0.9);transform: scale(0.9);}
