@@ -81,9 +81,10 @@ function reSize(){
     var winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var bodyHeight=$("body").height(),winHeight=$(window).height();
     var docHeight = bodyHeight>winHeight?bodyHeight:winHeight;
-    headHeight = $("header").height();
-    $("#PageLeft").css({ "min-height": docHeight});
-    $("#PageRight").css({ "min-height": docHeight});
+    //headHeight = $("header").height();
+    // console.log(bodyHeight, winHeight);
+    // $("#PageLeft").css({ "min-height": docHeight});
+    //$("#PageRight").css({ "min-height": docHeight});
     var menuWidth=$(window).width()-52;
     if($("#UserMenu").hasClass("isOpen")){
         $("header").css({ "left": "-"+menuWidth+"px" });
